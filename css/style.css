@@ -182,27 +182,22 @@
 }
 
 .gallery {
-    
     display: flex;
     flex-wrap: wrap;
-    column-count: 4;
-    column-gap: .6em;
 }
 
 .item{
-    position: relative;
-    display: inline-block;
     flex-grow: 1;
     margin: 0 2em 3em 0;
     width: calc(100% * (1/4) - 10px - 1px);
     transition: transform .3s, filter .3s;
-    z-index: 1;
 }
 
 .item:hover {
     transform: scale(1.1);
     filter: brightness(70%);
 }
+
 
 
 /* END CONTENT */
