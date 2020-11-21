@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Swash');
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: rgb(20, 20, 20);
+  font-family: 'Raleway', sans-serif;
+
+}
+
+/* START NAVIGATION */
+
+.nav {
+    height: 90px;
+    width: 100%;
+    font-size: 0.85em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.nav-informations {
+    display: flex;
+    height: 15px;
+    width: 100%;
+}
+
+.nav-logo {
+    margin: auto 3em;
+    transition: transform .7s;
+}
+
+.nav-logo:hover {
+    cursor: pointer;
+    transform: rotate(360deg) scale(1.2);
+}
+
+.nav-navigation {
+    display: flex;
+    height: 75px;
+    width: 100%;
+    background: #ffee00;
+}
+
+.nav-buttonlist  {
+    display: flex;
+    margin: 0 auto;
+}
+
+.nav-buttonitem {
+    padding: 0 2em;
+    line-height: 75px;
+    position: relative;
+
+    transition: background-color .2s, color .2s;
+}
+
+.lastbutton {
+    margin: 0 5em;
+}
+
+.nav-buttonitem:hover {
+    background-color:  #f5e400;
+    color: #F65058FF;
+}
+
+.nav-buttonitem::before {
+    content: '';
+    position: absolute;
+
+    left: 50%;
+    margin-left: -40%;
+    bottom: 1.5em;
+    opacity: 0;
+
+    width: 80%;
+    height: 1px;
+    background-color:  rgb(20, 20, 20);
+    z-index: 1;
+
+    transition: opacity .2s;
+}
+
+.active::before {
+    content: '';
+    position: absolute;
+
+    left: 50%;
+    margin-left: -40%;
+    bottom: 1.5em;
+    opacity: 1;
+
+    width: 80%;
+    height: 1px;
+    background-color:  rgb(20, 20, 20);
+    z-index: 1;
+}
+
+.nav-buttonitem:hover::before {
+    opacity: 1;
+}
+
+/* END NAVIGATION */
+
+/* START CONTENT */
+
+
+.article {
+    background: #ffffff;
+    margin: 4em auto 0 auto;
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.article-container {
+    height: 6vh;
+    width: 30vw;
+    margin: 7em 0 0 10em;
+}
+
+.article-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #F65058FF;
+    font-family: 'Cherry Swash', cursive;
+}
+
+.article-content {
+    margin-top: 2.5em;
+    margin-bottom: 5em;
+    line-height: 30px;
+    font-family: 'Cherry Swash', cursive;
+}
+
+.article-button {
+    position: relative;
+    background-color: #F65058FF;
+    color: #eeff00;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 0.8em;
+    z-index: 1;
+    transition: background-color .2s, color .2s;
+}
+
+.article-button:hover {
+    background-color: #eeff00;
+    color: #F65058FF;
+}
+
+.article-button::before {
+    content: '';
+    position: absolute;
+    background: #eeff00;
+    border-radius: 8px;
+    top: -8px;
+    left: 15px;
+    width: 9.12em;
+    height: 2.8em;
+    transition: transform .2s;
+    z-index: -1;
+}
+
+.article-button:hover::before {
+    transform: translateY(8px) translateX(-15px);
+}
+
+/* END CONTENT */
+
+/* START FOOTER */
+
+.footer {
+    position: relative;
+    background:#ffee00;
+    margin-top: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* .footer::before {
+    content: '';
+    position: absolute;
+    width: 90vw;
+    top: 0;
+    left: 50%;
+    margin-left: -45vw;
+    height: 1px;
+    background: rgb(133, 133, 133);
+
+} */
+
+.footer-copyrights {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 2.5em;
+}
+
+.footer-content {
+    display: flex;
+    width: 75vw;
+    margin: 20px 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-buttons {
+    margin-top: 30px;
+    height: 5vh;
+}
+
+.footer-button {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 38px;
+    width: 38px;
+
+    transition: transform .5s;
+}
+
+.footer-button:hover {
+    transform: rotate(360deg);
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    background-color: #F65058FF;
+    height: 600px;
+    width: 600px;
+    left: -250px;
+    bottom: -400px;
+    transform: rotate(45deg);
+}
+
+
+/* END FOOTER */
