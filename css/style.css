@@ -176,21 +176,29 @@
 .article-g {
     background: #ffffff;
     margin: 4em auto 0 auto;
-    width: 65vw;
-    display: flex;
-    justify-content: center;
+    
+    
 }
 
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
+    margin: 5em auto;
+    width: 65vw;
+}
+
+.gallery-grid {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
 }
 
 .item{
-    flex-grow: 1;
     margin: 0 2em 3em 0;
-    width: calc(100% * (1/4) - 10px - 1px);
     transition: transform .3s, filter .3s;
+}
+
+.item img {
+    width: 100%;
 }
 
 .item:hover {
