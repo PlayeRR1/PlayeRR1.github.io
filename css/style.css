@@ -44,9 +44,11 @@
     display: flex;
     height: 75px;
     width: 100%;
-    /* background: #ffee00; żółty */
+    background: #ffee00; /* żółty */
     /* background: #07e1e8; */
-    background: #29f09d;
+    /* background: #29f09d; */
+    /* background: #6ade0b; */
+    /* background: #0b51de; */
 }
 
 .nav-buttonlist  {
