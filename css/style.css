@@ -44,7 +44,8 @@ body {
     top: -5px;
     background: url("/img/hero.jpg");
     filter: brightness(65%) blur(3px);
-    background-size: 100%;
+    background-size: cover;
+    background-position: center center;
     height: calc(100% + 11px);
     width: calc(100% + 9px);
     z-index: -1;
