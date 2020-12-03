@@ -62,7 +62,7 @@ body {
     position: absolute;
     left: -5px;
     top: -5px;
-    background: url("/img/hero-test.jpg");
+    background: url("/img/hero.jpg");
     filter: brightness(95%) blur(2px);
     background-size: cover;
     background-position: center center;
