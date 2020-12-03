@@ -134,7 +134,9 @@ body {
 }
 
 .arrow-wrapper {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
     font-size: 3.2em;
 }
 
