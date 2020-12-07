@@ -191,6 +191,10 @@ body {
     justify-content: space-between;
 }
 
+.texturina {
+    font-family: 'Texturina', serif;
+}
+
 .article-wrapper {
     width: 50%;
     font-family: 'Texturina', serif;
@@ -285,7 +289,7 @@ body {
 
 }
 
-.mp-title {
+.a-title {
     position: relative;
     text-align: center;
     font-size: 30px;
@@ -293,7 +297,7 @@ body {
     padding-bottom: 2em;
 }
 
-.mp-title::before {
+.a-title::before {
     content: '';
     position: absolute;
     background: #9b9b9b;
@@ -304,7 +308,7 @@ body {
     bottom: 30px;
 }
 
-.mp-title::after {
+.a-title::after {
     content: '';
     position: absolute;
     background: #3a3a3a;
@@ -354,7 +358,7 @@ body {
 }
 
 .b-g {
-    margin: -5em auto 2em auto;
+    margin: -4em auto 4em auto;
 }
 
 .gw {
