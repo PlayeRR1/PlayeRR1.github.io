@@ -353,6 +353,10 @@ body {
     flex-direction: column;
 }
 
+.b-g {
+    margin: -5em auto 2em auto;
+}
+
 .gw {
     height: 520px;
 }
